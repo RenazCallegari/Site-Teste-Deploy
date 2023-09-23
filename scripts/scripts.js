@@ -10,9 +10,10 @@ ScrollReveal().reveal('.logo', { origin: 'left' });
 ScrollReveal().reveal('.slogan', { origin: 'right' });
 ScrollReveal().reveal('.top-btn', { origin: 'bottom' });
 ScrollReveal().reveal('.Cadastro-titulo', { origin: 'left' });
+ScrollReveal().reveal('.form-box', { origin: 'right' });
 
 
-/*=====================TYPED JS==================== */
+/*=====================TYPED JS====================*/
 const typed = new Typed ('.slogan', {
     strings: ['O seu portal para o mundo dos animes.', 'Sintonize-se com o melhor do anime.', 'Anime: a arte da imaginação em movimento.'],
     typeSpeed: 90,
