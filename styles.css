@@ -509,7 +509,7 @@ footer a:hover {
 .form-container {
     baackground-color: rgba(0, 255, 255, 0.327);
     width: 55rem;
-    height: 65rem;
+    height: 69rem;
 }
 
 #Cadastro-form {
@@ -539,7 +539,7 @@ footer a:hover {
     background-color: var(--bg-color);
     color: var(--text-color);
     width: 90%;
-    height: 3rem;
+    height: 3.3rem;
     border: 2px solid var(--main-color);
     border-radius: 1rem;
     padding: 10px;
@@ -548,9 +548,9 @@ footer a:hover {
 
 .sub-btn {
     width: 25rem; 
-    height: 7rem; 
+    padding: 10px;
     position: relative; 
-    top: 50px;
+    top: 25px;
     left: 150px; 
     color: var(--text-color);
     font-size: 2rem;
@@ -563,6 +563,36 @@ footer a:hover {
 .sub-btn:hover {
     color: var(--second-bg-color);
     box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+}
+
+.bx-show {
+    color: var(--main-color);
+    font-size: 35px;
+    position: absolute;
+    left: 523px;
+    top: 333px;
+    transition: .3s ease;
+}
+
+.bx-show:hover {
+    transform: scale(105%);
+    text-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+}
+
+.bx-hide {
+    color: var(--main-color);
+    font-size: 35px;
+    position: absolute;
+    left: 523px;
+    top: 333px;
+    transition: .3s ease;
+}
+
+.bx-hide:hover {
+    transform: scale(105%);
+    text-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
 }
 
@@ -590,6 +620,30 @@ footer a:hover {
     box-shadow: 0 0 20px var(--main-color);
     position: relative;
     top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.notify-box a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    background-color: var(--main-color);
+    padding: 10px 40px;
+    border-radius: 4rem;
+    transition: .3s ease;
+}
+
+.notify-box a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--text-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .notify-msg {

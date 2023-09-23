@@ -24,3 +24,20 @@ const typed = new Typed ('.slogan', {
     backDelay: 2000,
     loop: true
 });
+
+
+/*================= SHOW PASSWORD BUTTON ===================*/
+function MostrarSenha(){
+    var passwordInput = document.getElementById("SenhaInput");
+    var showPasswordButton = document.getElementById("MostrarSenha");
+
+    
+        if (passwordInput.type === "password") {
+            passwordInput.setAttribute('type','text');
+            showPasswordButton.classList.replace('bx-show','bx-hide');
+        } else {
+            passwordInput.setAttribute('type','password');
+            showPasswordButton.classList.replace('bx-hide','bx-show');
+        }
+;
+}

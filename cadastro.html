@@ -29,15 +29,17 @@
             <h2 id="Cadastro-titulo" class="Cadastro-titulo">Insira suas informações abaixo:</h2>
             <div class="form-box">
                 <div class="form-container">
-                    <form action="cadastro-concluido.html" id="Cadastro-form">
+                    <form action="cadastro-concluido.html" method="post" id="Cadastro-form">
                     <label for="Nome">Nome completo:</label>
                     <input type="text" name="Nome" id="Nome" class="input-btns" placeholder="Insira seu nome aqui ..." required>
                     <label for="Apelido">Apelido:</label>
                     <input type="text" name="Apelido" id="Apelido" class="input-btns" placeholder="Insira seu apelido aqui ..." required>
                     <label for="E-mail">E-mail:</label>
                     <input type="email" name="E-mail" id="E-mail" class="input-btns" placeholder="    Ex: sasuke@gmail.com ..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                    <label for="Telefone">Telefone:</label>
-                    <input type="tel" name="Telefone" id="Telefone" class="input-btns" placeholder="    Ex: (12) 12345-1234 ..." pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+                    <label for="Telefone">Telefone (opicional):</label>
+                    <input type="tel" name="Telefone" id="Telefone" class="input-btns" placeholder="    Ex: (12) 12345-1234 ..." pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+                    <label for="Senha">Sua senha:</label>
+                    <input type="password" name="Senha" id="SenhaInput" class="input-btns" placeholder="Insira sua senha aqui ..." required>
                     <label for="">Sexo:</label>
                     <label for="opcoes" style="position: relative; left: 6rem;">Feminino<input type="radio" name="opcoes" id="feminino" 
                         style="width: 18.2%; height: 20px; position: relative; top: 4px; left: -20px;" required></label>
@@ -49,6 +51,8 @@
                     <input type="date" name="DataDeNascimento" id="DataDeNascimento" class="input-btns" required>
                     <input type="submit" value="Concluir" class="sub-btn">
                     </form>
+                    
+                    <i class='bx bx-show'id="MostrarSenha" onclick="MostrarSenha()"></i>
                 </div>
             </div>
         </div>
