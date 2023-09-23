@@ -565,3 +565,39 @@ footer a:hover {
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
 }
+
+
+/*=========== estilização da pagina de notificação de conclusão =========*/
+
+#Inicio {
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    padding: 5px 10px; 
+}
+
+#Inicio:hover {
+    color: var(--second-bg-color);
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+.notify-box {
+    background-color: #90f5316e;
+    backdrop-filter: blur(50px);
+    width: 110rem;
+    height: 70rem;
+    border-radius: 4rem;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    position: relative;
+    top: -100px;
+}
+
+.notify-msg {
+    color: var(--text-color);
+    font-size: 70px;
+    text-shadow: 0 0 10px var(--main-color);
+    position: relative;
+    top: 340px;
+    z-index: 500;
+    text-align: center;
+}
