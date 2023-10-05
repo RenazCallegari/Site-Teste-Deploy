@@ -1,0 +1,7 @@
+  <label for="">Sexo:</label>
+                    <label for="opcoes" style="position: relative; left: 6rem;">Feminino<input type="radio" name="opcoes" id="feminino" 
+                        style="width: 18.2%; height: 20px; position: relative; top: 4px; left: -20px;" required></label>
+                    <label for="opcoes" style="position: relative; left: 6rem;">Maculino<input type="radio" name="opcoes" id="masculino" 
+                        style="width: 18.2%; height: 20px; position: relative; top: 4px; left: -20px;"></label>
+                    <label for="opcoes" style="position: relative; left: 6rem;" >Outro<input type="radio" name="opcoes" id="outro" 
+                        style="width: 30%; height: 20px; position: relative; top: 4px; left: -20px;"></label>

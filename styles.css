@@ -34,9 +34,14 @@ html {
 }
 
 #Index-page {
+    abackground-color: rgba(173, 216, 230, 0.431);
     height: 200vh;
     width: 100%;
     padding: 10rem 9% 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header {
@@ -93,16 +98,28 @@ a .bx-search:hover {
     box-shadow: 0 0 5px var(--main-color);
 }
 
+#container-indexpage-items1 {
+    abackground-color: rgba(255, 255, 0, 0.368);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .banner {
     background-image: url(images/banner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 35%;
+    height: 90%;
     border-radius: 3rem;
-    margin-top: -5rem;
     animation: pulsating 6s ease infinite;
     animation-delay: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -112,9 +129,8 @@ a .bx-search:hover {
     font-weight: 700;
     cursor: default;
     text-align: center;
-    margin-top: 6rem;
     font-style: italic;
-    transform: translateY(9rem)   
+  
 }
 
 .slogan {
@@ -125,8 +141,7 @@ a .bx-search:hover {
     cursor: default;
     text-align: center;
     font-style: oblique;
-    transform: translateY(-50px);
-    transform: translateY(2rem)   
+    transform: translateY(-5.5rem)   
 }
 
 .generos-anime {
@@ -175,7 +190,11 @@ a .bx-search:hover {
     }
 }
 
-
+#container-indexpage-items2 {
+    abackground-color: rgba(255, 0, 0, 0.587);
+    height: 120vh;
+    display: flex;
+}
 
 .generos-anime a {
     font-size: 2rem;
@@ -189,32 +208,59 @@ a .bx-search:hover {
     box-shadow: 0 0 10px var(--main-color);
 }
 
+.container-aside {
+    abackground-color: #3bf531;
+    width: 36rem;
+}
+
+.container-top-watched {
+    abackground-color: rgba(255, 166, 0, 0.452);
+    height: 68rem;
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #top-watched {
     font-size: 30px;
-    position: relative;
-    top: 15px;
-    left: -10px;
+    text-align: center;
 }
 
 .top-watched {
     background-color: var(--second-bg-color);
     border: 3px solid var(--main-color);
     border-radius: 2rem;
-    width: 20%;
-    height: 31.5%;
-    margin-top: 3rem;
+    width: 90%;
+    height: 95%;
     box-shadow: inset 0 0 10px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-topwatched-items {
+    abackground-color: violet;
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .top-watched div {
     background-color: var(--second-bg-color);
     border: 3px solid var(--main-color);
-    text-align: center;
     width: 95%;
     border-radius: 1rem;
-    margin: 2.5% 2.5% 4.8%;
     transition: .2s ease;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .top-watched div img {
@@ -228,27 +274,44 @@ a .bx-search:hover {
     cursor: pointer;
 }
 
+.container-socialmedia-box {
+    abackground-color: seagreen;
+    height: 43.7rem;
+    width: 36rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 #social-media {
     font-size: 30px;
-    position: relative;
-    top: 15px;
-    left: -10px;
 }
 
 .social-media-container {
-    background-color: var(--second-bg-color);
+    background-color: var(--second-bg-color) ;
     border: 3px solid var(--main-color);
     border-radius: 2rem;
-    width: 20%;
-    height: 15%;
+    width: 100%;
+    height: 100%;
     margin-top: 3rem;
     box-shadow: inset 0 0 10px 2px black;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+}
+
+.container-socialmedia-items {
+    abackground-color: aqua;
+    width: 91%;
+    height: 70%;
+    display: flex;
+    align-items: center;
 }
 
 .social-media-container div {
+    abackground-color: rgba(0, 0, 255, 0.366);
     width: 90%;
     height: 90%;
     display: flex;
@@ -263,10 +326,10 @@ a .bx-search:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
+    font-size: 7rem;
     color: var(--main-color);
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 10%;
@@ -286,12 +349,10 @@ a .bx-search:hover {
 
 
 article {
-    backgrsound-color: rgba(0, 0, 255, 0.254);
-    width: 115rem;
-    height: 100rem;
+    abackground-color: rgba(0, 0, 255, 0.254);
+    width: 117.5rem;
+    height: 112.7rem;
     position: relative;
-    top: -995px;
-    left: 360px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -395,7 +456,7 @@ footer a:hover {
 
 
 
-
+/*=========== estilização da scrollbar =========*/
 
 
 ::-webkit-scrollbar {
@@ -423,6 +484,129 @@ footer a:hover {
     background-color: azure;
 }
 
+/*=========== estilização da janela modal de login =========*/
+
+.janela-modal {
+    background-color: rgba(0, 0, 0, 0.355);
+    width: 100vw;
+    height: 105vh;
+    position: fixed;
+    left: 0;
+    top: 500;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: 85rem;
+    height: 70rem;
+    background-color: rgba(255, 255, 255, 0.371);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    backdrop-filter: blur(5px);
+    padding: 50px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.modal h2 {
+    font-size: 50px;
+    text-shadow: 0 0 10px var(--main-color);
+    margin-bottom: 1.5rem;
+    margin-top: -2rem;
+}
+
+.fechar {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease;
+}
+
+.fechar:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    background-color: var(--text-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.janela-modal.abrir {
+    display: flex;
+}
+
+.login-Form-Container {
+    background-color: rgba(255, 255, 255, 0.467);
+    border: 1px solid var(--main-color);
+    width: 55rem;
+    height: 70rem;
+    border-radius: 4rem;
+}
+
+.login-Form-Container form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.modal input {
+    border: 2px solid var(--main-color);
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.543);
+    width: 90%;
+    height: 4rem;
+    color: #000;
+    padding-left: 2rem;
+    margin-top: 5px;
+    font-size: 2rem;
+}
+
+.modal label {
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+#continuarLogado {
+    width: 18%;
+    height: 2rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+#Logar {
+    background-color: var(--main-color);
+    margin-top: 6rem;
+    color: #fff;
+    width: 30%;
+    height: 5.2rem;
+    transition: .2s ease;
+    font-size: 28px;
+    padding: 0;
+    border-radius: 4rem;
+    font-weight: bold;
+}
+
+#Logar:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    background-color: var(--text-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
 
 
 
@@ -450,7 +634,7 @@ footer a:hover {
     background-image: url(images/bcg-cadastro.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
+    overflow-y: hidden;
 }
 
 #Cadastro-titulo {
@@ -611,7 +795,7 @@ footer a:hover {
 }
 
 .notify-box {
-    background-color: #90f5316e;
+    background-color: rgba(255, 255, 255, 0.467);
     backdrop-filter: blur(50px);
     width: 110rem;
     height: 70rem;

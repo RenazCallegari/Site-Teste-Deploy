@@ -21,132 +21,163 @@
         <h1><a href="index.html" title="AnimeRise">AnimeRise</a></h1>
         
         <nav>
-            <a href="#" title="Pesquisa"><i class='bx bx-search'></i></a>
+            <a title="Pesquisa" id="Pesquisa"><i class='bx bx-search'></i></a>
             <a href="#" title="Catalogo">Catalogo</a>
-            <a href="#" title="Login" id="Login">Login</a>
+            <a href="#janela-modal" title="Login" id="Login" onclick="abrirModal()">Login</a>
             <a href="cadastro.html" title="Cadastro" id="Cadastro">Cadastre-se</a>
         </nav>
     </header> 
     
     <!-- formulario para o login -->
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal" id="modal">
+            <a class="fechar"><i class='bx bx-x' id="fechar"></i></a>
+            <h2 title="Login">Login</h2>
+            <div class="login-Form-Container">
+                <form action="">
+                    <label for="nomeUsuario" title="Nome de Usuario">Nome de Usuario</label>
+                    <input type="text" name="nomeUsuario" id="nomeUsuario" required>
+                    <label for="senhaUsuario" title="Senha">Senha</label>
+                    <input type="password" name="senhaUsuario" id="senhaUsuario" required>
+                    <label for="continuarLogado" title="Permanecer logado">Permanecer logado?</label>
+                    <input type="checkbox" name="continuarLogado" id="continuarLogado">
+                    <input type="submit" id="Logar" value="Logar" title="Logar">
+                </form>
+            </div>
+        </div>
+    </div>
     
-
+    <!-- container principal da pagina -->
     <section id="Index-page">
-        <div class="generos-anime">
-            <a href="#">lorem.</a>
-            <a href="#">Lorem.</a>
-            <a href="#">Lorem.</a>
-            <a href="#">Lorem.</a>
-            <a href="#">Lorem.</a>
-            <a href="#">Lorem.</a>
+        <!-- container dos generos de a nime e banner -->
+        <div id="container-indexpage-items1">
+            <div class="generos-anime">
+                <a href="#">lorem.</a>
+                <a href="#">Lorem.</a>
+                <a href="#">Lorem.</a>
+                <a href="#">Lorem.</a>
+                <a href="#">Lorem.</a>
+                <a href="#">Lorem.</a>
+            </div>
+            <div class="banner">
+                <div class="logo-container">
+                    <p class="logo">Anime Rise</p>
+                    <p class="slogan">Desperte o otaku em você.</p>
+                </div>
+            </div>
         </div>
-        <div class="banner">
-            <div class="logo-container">
-                <p class="logo">Anime Rise</p>
-                <p class="slogan">Desperte o otaku em você.</p>
+
+        <!-- container dos items depois do banner -->
+        <div id="container-indexpage-items2">
+            <!-- container para a barra lateral esquerda -->
+            <div class="container-aside">
+                <!-- mais assistidos da semana -->
+                <div class="container-top-watched">
+                    <h3 id="top-watched" title="Top Assistidos">Top 5 mais assistidos da semana:</h3>
+                        <div class="container-topwatched-items">
+                            <aside class="top-watched">
+                                <div>
+                                    <img src="images/default.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/default.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/default.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/default.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/default.png" alt="">
+                                </div>
+                            </aside>
+                        </div>
+                </div>
+
+                <!-- redes sociais da pagina -->
+                <div class="container-socialmedia-box">
+                    <h3 id="social-media" title="Redes Sociais">Nossas redes sociais:</h3>
+                        <div class="container-socialmedia-items">
+                            <aside class="social-media-container">
+                                    <div>
+                                        <a href="#" title="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                                        <a href="#" title="Reddit"><i class='bx bxl-reddit' ></i></a>
+                                        <a href="#" title="Discord"><i class='bx bxl-discord-alt' ></i></a>
+                                        <a href="#" title="Telegram"><i class='bx bxl-telegram' ></i></a>
+                                    </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
+            <article>
+                <h3 class="sujestoes" title="Sujestões">Sujestões para você</h3>
+                <div class="anim-eps-container">
+                    <div class="anim-eps-img">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                    </div>
+                </div>
+                <div class="anim-eps-container">
+                    <div class="anim-eps-img">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                    </div>
+                </div>
+                <div class="anim-eps-container">
+                    <div class="anim-eps-img">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                    </div>
+                </div>
+                <div class="anim-eps-container">
+                    <div class="anim-eps-img">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                        <img src="images/default.png" alt="">
+                    </div>
+                </div>
+            </article>
         </div>
-
-        
-
-        <!-- mais assistidos da semana -->
-        <h3 id="top-watched" title="Top Assistidos">Top 5 mais assistidos <br> da semana:</h3>
-        <aside class="top-watched">
-            <div>
-                <img src="images/default.png" alt="">
-            </div>
-            <div>
-                <img src="images/default.png" alt="">
-            </div>
-            <div>
-                <img src="images/default.png" alt="">
-            </div>
-            <div>
-                <img src="images/default.png" alt="">
-            </div>
-            <div>
-                <img src="images/default.png" alt="">
-            </div>
-        </aside>
-
-        <!-- redes sociais da pagina -->
-        <h3 id="social-media" title="Redes Sociais">Nossas redes sociais:</h3>
-        <aside class="social-media-container">
-            <div>
-                <a href="#" title="Instagram"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#" title="Reddit"><i class='bx bxl-reddit' ></i></a>
-                <a href="#" title="Discord"><i class='bx bxl-discord-alt' ></i></a>
-                <a href="#" title="Telegram"><i class='bx bxl-telegram' ></i></a>
-            </div>
-        </aside>
-
-        <article>
-            <h3 class="sujestoes" title="Sujestões">Sujestões para você</h3>
-            <div class="anim-eps-container">
-                <div class="anim-eps-img">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                </div>
-            </div>
-            <div class="anim-eps-container">
-                <div class="anim-eps-img">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                </div>
-            </div>
-            <div class="anim-eps-container">
-                <div class="anim-eps-img">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                </div>
-            </div>
-            <div class="anim-eps-container">
-                <div class="anim-eps-img">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                    <img src="images/default.png" alt="">
-                </div>
-            </div>
-        </article>
     </section>
         
     <!-- botão para o topo da pagina -->
